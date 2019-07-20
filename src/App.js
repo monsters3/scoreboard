@@ -4,6 +4,8 @@ import {Header} from './components/Header';
 import {Player} from "./components/Player";
 
 class App extends React.Component {
+	//Lifting Up : 카운터 컴포넌트가 갖고 있는 로컬 state를 최상단 부몰로 올리기
+	//로직을 구현하기 위해서 lifting up 이 필요
 	state = {
 		players : [
 			{name: 'LDK', score: 30, id:1},
